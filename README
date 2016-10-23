@@ -1,0 +1,23 @@
+Code Sample
+Author: Michael Lin
+
+Code sample from a larger project from the course "Programming and Problem 
+Solving". The original project goals were to program a player for a game "Pentocity".
+Players are given an empty 50x50 grid of land to develop for residential and
+factory buildings. A simulation is run where at each step, a random building
+request is given to the player, and the player must dynamically decide its
+placement on the land, subject to certain rules, including: factories must not
+be placed next to residences, all buildings must be connected to the perimeter
+via roads. The total score is determined by the number of buildings placed down,
+with bonuses given to residences placed next to park and pond cells. The full
+game is described here: http://www.cs.columbia.edu/~kar/4444f16/node17.html.
+
+Description of code sample:
+At each step of the simulation, the play() function is called, providing the
+player with the next building request and the current state of the 50x50 land.
+A building request contains information such as its type, a set of cells, and a
+rotation of those cells. play() must return a valid Move object containing
+the Building object, the rotation desired, its position to be placed on the board,
+and any road, water, or park cells to be built along with the building.
+
+
